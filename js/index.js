@@ -311,7 +311,271 @@ let tutor = "wambua"*/
 // }
 // console.log(factorial(5));
 
-let countdown = 10;
-while (countdown > 0) {
-  console.log(countdown--);
+// let countdown = 10;
+// while (countdown > 0) {
+//   console.log(countdown--);
+// }
+// display using a while loop
+// let initialValue = 1;
+// while (initialValue < 5) {
+//   console.log(initialValue);
+//   initialValue++;
+// }
+// let num = 0,
+//   sum = 0;
+//
+// while (num >= 0) {
+//   // sum += num;
+//   sum = sum + num;
+//   num = parseInt(prompt("Enter a number:"));
+// }
+//
+// console.log(sum);
+// let j = 8;
+// do {
+//   console.log(j--);
+// } while (j > 0);
+// let num = 0,
+//   sum = 0;
+// do {
+//   sum += num;
+//   num = parseInt(prompt("Enter a number: "));
+// } while (num >= 0);
+//
+// console.log(sum);
+// while (true) {
+//   console.log("Trump");
+// }
+// function factorial(n) {
+//   // if (n == 0) {
+//   //   return 1;
+//   // } else {
+//   //   return n * factorial(n - 1);
+//   // }
+//   while (n > 0) {
+//     if (n == 0) {
+//       return 1;
+//     } else {
+//       return n * factorial(n - 1);
+//     }
+//   }
+// }
+//
+// console.log(factorial(5));
+// let i = 0;
+// while (true) {
+//   console.log("Joseph");
+//
+//   if (i == 5) {
+//     break;
+//   }
+//
+//   i++;
+// }
+// while (true) {
+//   let number = Number(prompt("Please enter a number: "));
+//
+//   console.log(number);
+//   if (number == 0) {
+//     break;
+//   }
+// }
+// for (let l = 0; l < 20; l += 2) {
+//   console.log(l);
+//   if (l == 10) {
+//     break;
+//   }
+// }
+// let sum = 0;
+// while (true) {
+//   let num = parseInt(prompt("Please enter a number: "));
+//
+//   if (num < 0) {
+//     break;
+//   } else {
+//     sum += num;
+//   }
+// }
+//
+// console.log(sum);
+// for (let i = 0; i <= 3; i++) {
+//   for (let j = 0; j <= 3; j++) {
+//     if (j == 2) {
+//       break;
+//     }
+//     console.log(`i = ${i}, j = ${j}`);
+//   }
+// }
+// for (let i = 1; i <= 10; i++) {
+//   if (i == 5) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 != 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+// let num = 10;
+// while (num > 0) {
+//   // if (num % 2 == 0) {
+//   //   continue;
+//   // }
+//   // console.log(num);
+//
+//   if (num % 2 != 0) {
+//     num--;
+//     continue;
+//   } else {
+//     console.log(num--);
+//   }
+// }
+// // for (let i = 1; i <= 10; i++) {
+//   if (i >= 2 && i <= 6) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+// let num = 1;
+// while (num <= 10) {
+//   if (num % 2 == 0) {
+//     num++;
+//     continue;
+//   }
+//   console.log(num);
+//   num++;
+// }
+// for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//     if (j == 2) {
+//       break;
+//     }
+//     console.log(`${i}: ${j}`);
+//   }
+// }
+// outerloop: for (let i = 1; i <= 3; i++) {
+//   innerloop: for (let j = 1; j <= 3; j++) {
+//     if (j == 2) {
+//       continue innerloop;
+//     }
+//     console.log(`${i} ${j}`);
+//   }
+// }
+// function isPrimeNumber(n) {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i == 0) {
+//       return false;
+//     }
+//   }
+//   return n > 1;
+// }
+//
+// console.log(isPrimeNumber(2));
+// console.log(isPrimeNumber(3));
+// console.log(isPrimeNumber(-4));
+// console.log(isPrimeNumber(5));
+// console.log(isPrimeNumber(7));
+// let trafficLight = "green";
+//
+// switch (trafficLight) {
+//   case "red":
+//     console.log("stop");
+//     return;
+//   case "green":
+//     console.log("go");
+//
+//     return;
+//   case "yellow":
+//     console.log("get ready");
+//
+//     return;
+//   default:
+//     console.log("Unknown road color sign");
+// }
+// let trafficLight = "green";
+// let message = "";
+//
+// switch (trafficLight) {
+//   case "red":
+//     message = "stop immediately";
+//     break;
+//   case "yellow":
+//     message = "Prepare to stop.";
+//     break;
+//   case "green":
+//     message = "Proceed or continue driving..";
+//     break;
+//   default:
+//     message = "Invalid traffic light color.";
+// }
+//
+// console.log(message);
+// let month = 14;
+// let activity = "";
+// switch (month) {
+//   case 1:
+//     console.log("January: Dry Month");
+//     break;
+//   case 2:
+//     console.log("February: Short Month");
+//     break;
+//   case 3:
+//     console.log("March: Start of Long Rains");
+//     break;
+//   case 4:
+//     console.log("April: Easter Holidays");
+//     break;
+//   case 5:
+//     console.log("May: Labour Day");
+//     break;
+//   case 6:
+//     console.log("June: Madaraka Day");
+//     break;
+//   case 7:
+//     console.log("July: Autumn/independence");
+//     break;
+//   case 8:
+//     console.log("August: commemorate twin attacks");
+//     break;
+//   case 9:
+//     console.log("September: sun is at the equator");
+//     break;
+//   case 10:
+//     console.log("October: Halloween Holiday");
+//     break;
+//   case 11:
+//     console.log("November: International Football break");
+//     break;
+//   case 12:
+//     console.log("December: Christmas Holidays");
+//     break;
+//   default:
+//     console.log("You entered an invalid month number");
+// }
+let num1 = Number(prompt("Enter first number..."));
+let num2 = Number(prompt("Enter second number..."));
+
+let operator = prompt("Enter an operator (+, -, /, *)");
+
+function add() {
+  switch (operator) {
+    case "+":
+      console.log(`${num1} + ${num2} = ${num1 + num2}`);
+      break;
+    case "-":
+      console.log(`${num1} - ${num2} = ${num1 - num2}`);
+      break;
+    case "*":
+      console.log(`${num1} * ${num2} = ${num1 * num2}`);
+      break;
+    case "/":
+      console.log(`${num1} / ${num2} = ${num1 / num2}`);
+      break;
+    default:
+      console.log("invalid operator. use either of these(+, -, *, /)");
+  }
 }
+
+add();
