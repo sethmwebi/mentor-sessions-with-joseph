@@ -66,19 +66,32 @@
 //
 // console.log(library[2].title);
 
+// const student = {
+//   name: "Brian",
+//   age: 20,
+// };
+//
+// const grades = {
+//   name: "Brian",
+//   math: "A+",
+//   age: 21,
+// };
+//
+// function mergeProperties(obj1, obj2) {
+//   return { ...obj1, ...obj2 };
+// }
+//
+// console.log(mergeProperties(student, grades));
 const student = {
   name: "Brian",
-  age: 20,
+  grade: "A+",
+  subject: "Math",
+  tutor: "wambua",
 };
 
-const grades = {
-  name: "Brian",
-  math: "A+",
-  age: 21,
-};
-
-function mergeProperties(obj1, obj2) {
-  return { ...obj1, ...obj2 };
+// for (let prop in student) {
+//   console.log(`${prop}: ${student[prop]}`);
+// }
+for (const item in student) {
+  console.log(`${item}: ${student[item]}`);
 }
-
-console.log(mergeProperties(student, grades));
