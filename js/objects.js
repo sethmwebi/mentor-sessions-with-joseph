@@ -138,19 +138,128 @@
 // console.log(
 //   `The Richest man in the world is ${richestPerson.name} and he is ${richestPerson.age} years old`,
 // );
-function RichestPerson(person_name, person_age, person_gender) {
-  this.name = person_name;
-  this.age = person_age;
-  this.gender = person_gender;
+// function RichestPerson(person_name, person_age, person_gender) {
+//   this.name = person_name;
+//   this.age = person_age;
+//   this.gender = person_gender;
+//
+//   this.greet = function () {
+//     return `Hi, I am ${this.gender} and my name is ${this.name}. Am now ${this.age} years old`;
+//   };
+// }
+//
+// let person1 = new RichestPerson("Elon", 52, "male");
+// console.log(person1.greet());
+// let person2 = new RichestPerson("Jeff", 63, "male");
+// console.log(person2.greet());
+// let person3 = new RichestPerson("Oprah", 60, "female");
+// console.log(person3.greet());
+// let person1 = new RichestPerson("Elon", 52, "male");
+// let person2 = new RichestPerson("Elon", 52, "male");
 
-  this.greet = function () {
-    return `Hi, I am ${this.gender} and my name is ${this.name}. Am now ${this.age} years old`;
-  };
+// console.log(person1 === person2);
+// let item1 = "seth";
+// let item2 = "seth";
+// console.log(item1 === item2);
+// const name = "Joseph";
+// console.log(name);
+// class RichestPerson {
+//   //  name;
+//   // public age;
+//   // public gender;
+//   constructor(person_name, person_age, person_gender) {
+//     this.name = person_name;
+//     this.age = person_age;
+//     this.gender = person_gender;
+//   }
+//
+//   getName() {
+//     return this.name;
+//   }
+//
+//   getAge() {
+//     return this.age;
+//   }
+//
+//   getGender() {
+//     return this.gender;
+//   }
+// }
+//
+// let person1 = new RichestPerson("Elon", 52, "male");
+// console.log(
+//   `Hi, I am ${person1.getGender()} and my name is ${person1.getName()}. Am now ${person1.getAge()} years old`,
+// );
+// const president = {
+//   name: "Donald",
+//
+//   get getName() {
+//     return this.name;
+//   },
+//
+//   set changeName(newName) {
+//     this.name = newName;
+//   },
+// };
+//
+// // console.log(president.name);
+// // console.log(president.getName);
+// president.changeName = "Obama";
+// console.log(president.getName);
+
+// const country = {
+//   name: "North Korea",
+// };
+//
+// Object.defineProperty(country, "getCountry", {
+//   get: function () {
+//     return this.name;
+//   },
+// });
+//
+// // console.log(country.getCountry);
+// Object.defineProperty(country, "setCountry", {
+//   set: function (newCountry) {
+//     this.name = newCountry;
+//   },
+// });
+//
+// country.setCountry = "China";
+// console.log(country.getCountry);
+
+// function Country(continent) {
+//   this.continent = continent;
+// }
+//
+// Country.prototype.savage = "Genghis Khan";
+//
+// // const fact1 = new Country();
+// const continent = new Country("Asia");
+// console.log(continent.savage);
+// function Car() {
+//   console.log("Jeep");
+// }
+//
+// Car.prototype.color = "Red";
+//
+// Car.prototype.drive = function () {
+//   console.log(`Driving the car painted in ${this.color}...`);
+// };
+//
+// Car.prototype.drive();
+function Car(model, year) {
+  this.year = year;
+  this.model = model;
 }
 
-let person1 = new RichestPerson("Elon", 52, "male");
-console.log(person1.greet());
-let person2 = new RichestPerson("Jeff", 63, "male");
-console.log(person2.greet());
-let person3 = new RichestPerson("Oprah", 60, "female");
-console.log(person3.greet());
+let c1 = new Car("Mustang", 1964);
+let c2 = new Car("Corolla", 1966);
+
+Car.prototype.color = "Black";
+
+Car.prototype.drive = function () {
+  console.log(`Driving ${this.model}`);
+};
+
+console.log(`${c1.model} is ${c1.color} in color`);
+console.log(`${c2.model} is ${c2.color} in color`);
