@@ -247,19 +247,37 @@
 // };
 //
 // Car.prototype.drive();
-function Car(model, year) {
-  this.year = year;
-  this.model = model;
+// function Car(model, year, name) {
+//   this.year = year;
+//   this.model = model;
+//   this.name = name;
+// }
+//
+// let c1 = new Car("Mustang", 1964, "kamala");
+// let c2 = new Car("Corolla", 1966, "trump");
+//
+// Car.prototype.name = "Joe Rogan";
+//
+// Car.prototype.color = "Black";
+//
+// Car.prototype.drive = function () {
+//   console.log(`Driving ${this.model}`);
+// };
+//
+// // console.log(`${c1.model} is ${c1.color} in color`);
+// // console.log(`${c2.model} is ${c2.color} in color`);
+// // c1.drive();
+// // c2.drive();
+// console.log(c1.name);
+function Car() {
+  return "car";
 }
 
-let c1 = new Car("Mustang", 1964);
-let c2 = new Car("Corolla", 1966);
+Car.prototype.color = "Brown";
 
-Car.prototype.color = "Black";
+const c1 = new Car();
+// console.log(c1.color);
 
-Car.prototype.drive = function () {
-  console.log(`Driving ${this.model}`);
-};
+Car.prototype.color = "black";
 
-console.log(`${c1.model} is ${c1.color} in color`);
-console.log(`${c2.model} is ${c2.color} in color`);
+console.log(c1.color);
