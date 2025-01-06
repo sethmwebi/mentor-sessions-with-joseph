@@ -1,5 +1,4 @@
-// let students = ["kevin", "mark", "john", 23, true, { name: "mike" }];
-// // console.log(students[5].name);
+// let students = ["kevin", "mark", "john", 23, true, { name: "mike" }]; // console.log(students[5].name);
 // console.log(typeof students);
 let fruits1 = ["strawberry", "apple", "banana", "orange", "passion"];
 let fruits2 = ["guavas", "loquats"];
