@@ -34,5 +34,5 @@ let fruits2 = ["guavas", "loquats"];
 //
 // console.log(sortedFruits);
 // console.log(fruits1.sort().reverse());
-const favoriteFruits = fruits1.splice(1, 1, "guava");
-console.log(fruits1);
+// const favoriteFruits = fruits1.splice(1, 1, "guava");
+// console.log(fruits1);

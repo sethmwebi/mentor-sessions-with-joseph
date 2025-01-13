@@ -33,11 +33,14 @@ let studentsData = [student1, student2, student3];
 //     console.log(j);
 //   }
 // }
+// function flattenNestedArray(arr) {
+//   let flatArray = arr.reduce((val, cur) => {
+//     return val.concat(cur);
+//   }, []);
+//   return flatArray;
+// }
 function flattenNestedArray(arr) {
-  let flatArray = arr.reduce((val, cur) => {
-    return val.concat(cur);
-  }, []);
-  return flatArray;
+  return arr.reduce((val, cur) => val.concat(cur), []);
 }
 
 console.log(flattenNestedArray([[10, 20], [30], [40, 50, 60]]));
